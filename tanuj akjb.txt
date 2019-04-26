@@ -1,0 +1,18 @@
+A=input("enter matrix A")
+B=input("constant matrix")
+C=input("augmented matrix")
+disp(A)
+disp(B)
+disp(C)
+if rank(C)==rank(A) then
+    disp("matrix is consistent")
+else
+    disp("matrix is inconsistent")
+end
+if rank(A)==3 then
+    disp("unique solution")
+    X=A\B
+    disp(X)
+else
+    disp("infinite solution")
+end
